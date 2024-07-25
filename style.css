@@ -266,14 +266,6 @@ label {
     }
   }
 
-/*.next{
-    width: 5vw;
-    background-color: #00aeac;
-    border-radius: 30px;
-    border: 1px solid black;
-    font-size: 20px;
-    font-weight: bold;
-}*/
 
 .next {
     --primary-color: #00aeac;
@@ -341,13 +333,12 @@ label {
     right: 3vw;
     top: 40vh;
     width: 15vw;
-    height: 33vh;
+    height: 34vh;
     background-color: gainsboro;
     display: block;
 }
 .selector label{
-    display: block;
-    margin-left: 2.5vw;
+    margin-left: 1vw;
     margin-top: 1vh;
 }
 .selector #firstGroup{
@@ -366,6 +357,9 @@ label {
     height: 1.5vh;
 }
 
+.selectorRows{
+    display: block;
+}
   
 .check {
     cursor: pointer;
@@ -435,3 +429,213 @@ label {
     transition-delay: 0.15s;
   }
   
+/* Innentől jönnek a checkboxok */
+#indDescent:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indDescent:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indDescent:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#indClimb:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indClimb:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indClimb:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#firstGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#firstGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#firstGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#secondGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#secondGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#secondGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#thirdGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#thirdGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#thirdGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#fourthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#fourthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#fourthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#fifthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#fifthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#fifthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#sixthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#sixthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#sixthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#seventhGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#seventhGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#seventhGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#eighthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#eighthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#eighthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#ninthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#ninthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#ninthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/* Választék */
+
+#tenthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#tenthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#tenthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
