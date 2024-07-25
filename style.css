@@ -64,7 +64,7 @@ header p{
     width: 18.5vw;
     padding-left: 6.5vw;
     margin-top: 2vh;
-    background-image: url('../Arrow.png');
+    background-image: url('Images/Arrow.png');
     background-repeat:no-repeat;
     background-size: 42vh;
     background-position-x: 2.5vw;
@@ -657,6 +657,7 @@ label {
     transition-delay: 0.15s;
 }
 
+
 /* Választék */
 
 #indRelUc:checked + .check svg {
@@ -669,6 +670,91 @@ label {
 }
 
 #indRelUc:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék utolsó 5 van*/
+
+#indAutoRev:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indAutoRev:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indAutoRev:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#indEarlyToc:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indEarlyToc:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indEarlyToc:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#indTLHigher:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indTLHigher:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indTLHigher:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#indOddFl:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indOddFl:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indOddFl:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#indAtSummer:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indAtSummer:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indAtSummer:checked + .check svg polyline {
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
