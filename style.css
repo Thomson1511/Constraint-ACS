@@ -639,3 +639,37 @@ label {
     transition: all 0.2s linear;
     transition-delay: 0.15s;
 }
+
+/* Választék */
+
+#indRelTen:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indRelTen:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indRelTen:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#indRelUc:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#indRelUc:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#indRelUc:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
