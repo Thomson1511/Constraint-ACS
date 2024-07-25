@@ -4112,7 +4112,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         }
         if (CurrentConstraint.AutoREV !== false){
-            hintText += `Auto REV: ${CurrentConstraint.ReleasedUc}<br>`;
+            hintText += `Auto REV: ${CurrentConstraint.AutoREV}<br>`;
         }
         if (CurrentConstraint.EarlyToC !== false){
             hintText += `Early ToC needed: ${CurrentConstraint.EarlyToC}<br>`;
