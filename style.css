@@ -1,0 +1,437 @@
+body{
+    background: url('Images/Hungary_map_big.svg') no-repeat;
+    background-size: 170vw;
+    background-position-y: -15vw;
+    background-position-x: -17vw;
+    margin: 0;
+    height: 100vh;
+}
+header{
+    background: linear-gradient(rgb(45, 58, 71) 75%, rgb(46,67,77));
+}
+header p{
+    margin:0;
+    height: 6vh;
+}
+
+.container {
+    background-color: #F1F1E6 ;
+    width: 60vw;
+    height: 70vh;
+    margin-top: 12vh;
+    margin-left: 20vw;
+}
+.first-section, .second-section, .third-section, .forth-section{
+    border-bottom: 1px dashed #776191;
+}
+.first-section{
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    align-items: center; /* Vertikális középre igazítás */
+    justify-content: space-between; /* Elosztás */
+}
+.second-section{
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    align-items: center; /* Vertikális középre igazítás */
+}
+.third-section{
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+}
+.forth-section{
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+}
+.fifth-section{
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+}
+.left, .right, .arrow-left, .arrow-right{
+    display:inline-block;
+    height: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.middle{
+    display:inline-block;
+    height: 13vh;
+    width: 18.5vw;
+    padding-left: 6.5vw;
+    margin-top: 2vh;
+    background-image: url('../Arrow.png');
+    background-repeat:no-repeat;
+    background-size: 42vh;
+    background-position-x: 2.5vw;
+}
+.left, .right {
+    width: 16vw;
+}
+.left{
+    margin-right: 1vw;
+}
+.right{
+    margin-left: 1vw;
+}
+.first-section p{
+    margin: 0;
+}
+.left p{
+    margin-left: 4vw;
+    box-shadow: 5px 5px 10px #1e3a4b;
+}
+.right p{
+    margin-right: 4vw;
+    box-shadow: 5px 5px 10px #1e3a4b;
+}
+.top-m, .bottom-m{
+    height: 5vh;
+}
+.top-m p, .bottom-m p, .right p, .left p{
+    height: 5vh;
+    width: 12vw;
+    border-radius: 10px;
+}
+.top-m{
+    margin-bottom: 1vh;
+}
+.top-m p{
+    border: 1px solid black;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-m p{
+    background-color: cornsilk;
+    border: 1px solid black;
+}
+.second-section input, .third-center-bot input, .forth-left-bot input{
+    width: 4vw;
+}
+
+.ConditionACIn{
+    margin-left: 10vw;
+    margin-right: 2vw;
+    width: 10vw;
+}
+.MainFL{
+    margin-right: 6vw;
+}
+.ConditionToReach{
+    width: 10vw;
+}
+.ReachFL{
+    margin-right: 10vw;
+    margin-left: 2vw;
+}
+input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+.third-left, .third-right, .third-center{
+    width: 20vw;
+    height: 15vh;
+}
+.third-left-top, .third-left-mid, .third-left-bot{
+height: 4vh;
+align-items: center;
+display: flex;
+margin-left: 5vw;
+}
+.third-left-top{
+    margin-top: 1.5vh;
+}
+label {
+    user-select: none; /* Letiltja a kijelölést */
+}
+.third-center-top{
+    height: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #1e3a4b;
+}
+.third-center-bot{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third-right-top, .third-right-bot{
+    height: 3vh;
+    margin-left: 5vw;
+}
+.third-right-top{
+    margin-top: 4.5vh;
+}
+.forth-left{
+    border-right: 1px dashed #776191;
+}
+.forth-left, .forth-right{
+    height: 15vh;
+    width: 30vw;
+}
+.forth-left-top{
+    height: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 9vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #1e3a4b;
+}
+.forth-left-bot{
+    margin-top: 2vh;
+    height: 10vh;
+    margin-left: 1vw;
+}
+.third-right-first, .third-right-second, .third-right-third, .third-right-forth, .third-right-fifth{
+    margin-left: 5vw;
+    margin-top: 0.5vh;
+}
+.third-right-first{
+    margin-top: 1vh;
+}
+.points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 15vw;
+    width: 5vw;
+    border-bottom: #00aeac solid 1px;
+    border-top: #00aeac solid 1px;
+    font-size: 30px;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+}
+.points, .hint, .next{
+    margin-top: 3vh;
+    height: 4vh;
+}
+.hint{
+    width: 10vw;
+    margin-right: 15vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hint svg {
+    height: 1.5vh;
+}
+
+.hint:hover svg {
+    animation: jello-vertical 0.7s both;
+  }
+  @keyframes jello-vertical {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+/*.next{
+    width: 5vw;
+    background-color: #00aeac;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}*/
+
+.next {
+    --primary-color: #00aeac;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .next .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .next .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .next .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .next:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .next:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .next:hover .arrow:before {
+    right: 0;
+  }
+
+
+.selector{
+    position: absolute;
+    right: 3vw;
+    top: 40vh;
+    width: 15vw;
+    height: 33vh;
+    background-color: gainsboro;
+    display: block;
+}
+.selector label{
+    display: block;
+    margin-left: 2.5vw;
+    margin-top: 1vh;
+}
+.selector #firstGroup{
+    margin-top: 1vh
+}
+
+#hintContainer{
+    position: absolute;
+    left: 3vw;
+    top: 40vh;
+    width: 15vw;
+    height: 28vh;
+    background-color: gainsboro;
+}
+.selectorImages{
+    height: 1.5vh;
+}
+
+  
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: 1vh;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #1e3a4b;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: #4285f4;
+  }
+  
+  #indTurn:checked + .check svg {
+    stroke: #4285f4;
+  }
+  
+  #indTurn:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #indTurn:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+  
