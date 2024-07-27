@@ -536,7 +536,7 @@ let constraint = [
         ReleasedFromTen: false,
         ReleasedUc: false,
         SpecialConditionOne: "atSummer",
-        SpecialConditionTwo: "atLevel",
+        SpecialConditionTwo: "atFL",
         SpecialConditionFL: 0,
         AutoREV: false,
         EarlyToC: false,
