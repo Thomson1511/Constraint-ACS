@@ -4045,6 +4045,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (CurrentConstraint.DepartureOrArrival === "A") {
             indAirport.style.backgroundColor = "#e22030 ";
         }
+        hintText = "";
+        document.getElementById('hintContainer').innerHTML = hintText;
         displayPoints();
     }
 
@@ -4205,8 +4207,6 @@ document.addEventListener("DOMContentLoaded", function() {
             //index növelése
             CurrentConstraintIndex++;
             if (CurrentConstraintIndex < filteredConstraints.length){
-                hintText = "";
-                document.getElementById('hintContainer').innerHTML = hintText;
                 displayCurrentConstraint();
             } else {
                 alert('Congratulations! You have completed all the constraints.')
