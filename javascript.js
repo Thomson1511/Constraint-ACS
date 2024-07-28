@@ -4145,7 +4145,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 hintText += `Spec2: At FL: <br>`;
             }
             else if(CurrentConstraint.SpecialConditionTwo === "aboveFl"){
-                hintText += `Spec1: Above FL: <br>`;
+                hintText += `Spec1: Above FL: `;
             }
             else{
                 hintText += `Spec2: No constraint<br>`;
@@ -4153,9 +4153,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if (CurrentConstraint.SpecialConditionFL !== 0){
             if (CurrentConstraint.SpecialConditionFL < 600){
-                hintText += `Special condition FL ${CurrentConstraint.SpecialConditionFL}<br>`;
+                hintText += `Spec FL ${CurrentConstraint.SpecialConditionFL}<br>`;
             } else{
-                hintText += `Special condition ${CurrentConstraint.SpecialConditionFL} ft<br>`;
+                hintText += `Spec ${CurrentConstraint.SpecialConditionFL} ft<br>`;
             };
         }
         if (CurrentConstraint.AutoREV !== false){
