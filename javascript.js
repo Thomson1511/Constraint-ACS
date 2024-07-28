@@ -4059,8 +4059,26 @@ document.addEventListener("DOMContentLoaded", function() {
         hintText = "";
 
         if (CurrentConstraint.ConditionACIn !== "nothing"){
-            hintText += `Condition: ${CurrentConstraint.ConditionACIn}<br>`;
-        }
+            if (CurrentConstraint.ConditionACIn === "atFL"){
+                hintText += `At: `;
+            }
+            else if (CurrentConstraint.ConditionACIn === "inClimb"){
+                hintText += `In climb to: `;
+            }
+            else if (CurrentConstraint.ConditionACIn === "inDescent"){
+                hintText += `In descent to: `;
+            }
+            else if (CurrentConstraint.ConditionACIn === "SubjectToAR"){
+                hintText += `Subject to App. Req. <br>`;
+            }
+            else if (CurrentConstraint.ConditionACIn === "atFLorBelow"){
+                hintText += `At FL or below: `;
+            }
+            else{
+                hintText += `${CurrentConstraint.ConditionACIn} `;
+            }
+            }
+            
         if (CurrentConstraint.MainFL !== 0){
             if (CurrentConstraint.MainFL < 600){
                 hintText += `FL ${CurrentConstraint.MainFL}<br>`;
@@ -4069,7 +4087,12 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         if (CurrentConstraint.ConditionToReach !== "nothing"){
-            hintText += `Condition: ${CurrentConstraint.ConditionToReach}<br>`;
+            if (CurrentConstraint.ConditionToReach === "crossLoRAbove"){
+                hintText += `Cross LoR above: `;
+            }
+            else{
+                hintText += `Cross LoR below: `;
+        }
         }
         if (CurrentConstraint.ReachFL !== 0){
             if (CurrentConstraint.ReachFL < 600){
@@ -4079,13 +4102,13 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         }
         if (CurrentConstraint.ReleasedForTurn !== false){
-            hintText += `Released for turn: ${CurrentConstraint.ReleasedForTurn}<br>`;
+            hintText += `Released for turn<br>`;
         }
         if (CurrentConstraint.ReleasedForDescent !== false){
-            hintText += `Released for descent: ${CurrentConstraint.ReleasedForDescent}<br>`;
+            hintText += `Released for descent<br>`;
         }
         if (CurrentConstraint.ReleasedForClimb !== false){
-            hintText += `Released for climb: ${CurrentConstraint.ReleasedForClimb}<br>`;
+            hintText += `Released for climb<br>`;
         }
         if (CurrentConstraint.ReleasedUntil !== 0){
             if (CurrentConstraint.ReleasedUntil < 600){
@@ -4095,16 +4118,38 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         }
         if (CurrentConstraint.ReleasedFromTen !== false){
-            hintText += `Released 10 NM before COP: ${CurrentConstraint.ReleasedFromTen}<br>`;
+            hintText += `Released 10 NM before COP<br>`;
         }
         if (CurrentConstraint.ReleasedUc !== false){
-            hintText += `Released (upon contact?): ${CurrentConstraint.ReleasedUc}<br>`;
+            hintText += `Released (upon contact?)<br>`;
         }
         if (CurrentConstraint.SpecialConditionOne !== "nothing"){
-            hintText += `Special Condition 1: ${CurrentConstraint.SpecialConditionOne}<br>`;
+            if (CurrentConstraint.SpecialConditionOne === "atSummer"){
+                hintText += `Spec1: at Summer<br>`;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "AMLIBA"){
+                hintText += `Spec1: If via AMRAX - LITKU, BADOV<br>`;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "ARNeeded"){
+                hintText += `Spec1: Approval request needed<br>`;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "TRA"){
+                hintText += `Spec1: If TRA06D active<br>`;
+            }
+            else{
+                hintText += `Spec1: If via EDEMU, ARFOX, ANEXA<br>`;
+            }
         }
         if (CurrentConstraint.SpecialConditionTwo !== "nothing"){
-            hintText += `Special Condition 2: ${CurrentConstraint.SpecialConditionTwo}<br>`;
+            if (CurrentConstraint.SpecialConditionTwo === "atFL"){
+                hintText += `Spec2: At FL: <br>`;
+            }
+            else if(CurrentConstraint.SpecialConditionTwo === "aboveFl"){
+                hintText += `Spec1: Above FL: <br>`;
+            }
+            else{
+                hintText += `Spec2: No constraint<br>`;
+            }
         }
         if (CurrentConstraint.SpecialConditionFL !== 0){
             if (CurrentConstraint.SpecialConditionFL < 600){
@@ -4114,19 +4159,19 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         }
         if (CurrentConstraint.AutoREV !== false){
-            hintText += `Auto REV: ${CurrentConstraint.AutoREV}<br>`;
+            hintText += `Subject to automatic REV<br>`;
         }
         if (CurrentConstraint.EarlyToC !== false){
-            hintText += `Early ToC needed: ${CurrentConstraint.EarlyToC}<br>`;
+            hintText += `Early ToC needed<br>`;
         }
         if (CurrentConstraint.TLHigher !== false){
-            hintText += `if TL higher (FL at special condition two): ${CurrentConstraint.TLHigher}<br>`;
+            hintText += `if TL higher<br>`;
         }
         if (CurrentConstraint.OddFL !== false){
-            hintText += `Odd FL: ${CurrentConstraint.OddFL}<br>`;
+            hintText += `Odd FL<br>`;
         }
         if (CurrentConstraint.AtSummer !== false){
-            hintText += `Summer FLAS: ${CurrentConstraint.AtSummer}<br>`;
+            hintText += `Summer FLAS<br>`;
         }
         document.getElementById('hintContainer').innerHTML = hintText;
     }
