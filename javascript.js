@@ -3967,6 +3967,9 @@ document.addEventListener('keydown', function (event) {
 let CurrentConstraintIndex = 0;
 let filteredConstraints = []; 
 let hintText = "";
+let errorNumber = 0;
+let ErrorList = [];
+
 
 // Shuffle function (Fisher-Yates)
 function shuffle(array) {
@@ -3975,6 +3978,11 @@ function shuffle(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+}
+
+function showErrors(){
+    const errors = document.getElementById('error');
+    error.textContent = errorNumber;
 }
 
   // DOMContentLoaded eseménykezelő a biztonságos DOM manipulációhoz
@@ -4028,6 +4036,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         CurrentConstraintIndex = 0;
+        ErrorList.length = 0;
+        errorNumber = 0;
         displayCurrentConstraint();
 }
 
@@ -4048,6 +4058,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hintText = "";
         document.getElementById('hintContainer').innerHTML = hintText;
         displayPoints();
+        showErrors();
     }
 
     function displayPoints(){
@@ -4254,10 +4265,23 @@ document.addEventListener("DOMContentLoaded", function() {
             if (CurrentConstraintIndex < filteredConstraints.length){
                 displayCurrentConstraint();
             } else {
-                alert('Congratulations! You have completed all the constraints.')
+                if(ErrorList.length < 1){
+                    alert('Congratulations! You have completed all the constraints.');
+                }
+                else{
+                    alert('Nice try!' + '\nYour mistakes:\n' + ErrorList.join("\n"));
+                    ErrorList.length = 0;
+                    errorNumber = 0;
+                }
                 CurrentConstraintIndex = 0;
                 displayCurrentConstraint();
             }
+        }
+        else{
+            errorNumber += 1;
+            ErrorList.push(CurrentConstraint.AirportCodes + "-" + CurrentConstraint.DepartureOrArrival + " Via: " + CurrentConstraint.Via)
+            showErrors();
+            //console.log("Error list:" + ErrorList.join(", "));
         }
 
 

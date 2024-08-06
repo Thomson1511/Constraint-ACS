@@ -343,7 +343,7 @@ label {
     right: 3vw;
     top: 40vh;
     width: 15vw;
-    height: 34vh;
+    height: 41vh;
     background-color: gainsboro;
     display: block;
 }
@@ -652,6 +652,40 @@ label {
 
 /* Választék */
 
+#eleventhGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#eleventhGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#eleventhGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
+#twelfthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#twelfthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#twelfthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/* Választék */
+
 #indRelTen:checked + .check svg {
     stroke: #4285f4;
 }
@@ -770,8 +804,38 @@ label {
     transition-delay: 0.15s;
 }
 
-
-
+.errors{
+    position: absolute;
+    display: flex;
+    bottom: 2vh;
+    left: 47.2vw;
+    height: 5vh;
+    width: 6vw;
+    background-color: #00aeac;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: end;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.errorsHeader{
+    position: absolute;
+    display: flex;
+    bottom: 6.2vh;
+    left: 48.5vw;
+    height: 1.5vh;
+    width: 3.4vw;
+    background-color: red;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 
 
 
