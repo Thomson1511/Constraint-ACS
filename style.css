@@ -85,10 +85,12 @@ header p{
 .left p{
     margin-left: 4vw;
     box-shadow: 5px 5px 10px #1e3a4b;
+    font-family: 'montserrat';
 }
 .right p{
     margin-right: 4vw;
     box-shadow: 5px 5px 10px #1e3a4b;
+    font-family: 'montserrat';
 }
 .top-m, .bottom-m{
     height: 5vh;
@@ -103,6 +105,7 @@ header p{
 }
 .top-m p{
     border: 1px solid black;
+    background-color: cornsilk;
 }
 p{
     display: flex;
@@ -341,7 +344,7 @@ label {
 .selector{
     position: absolute;
     right: 3vw;
-    top: 40vh;
+    top: 35vh;
     width: 15vw;
     height: 41vh;
     background-color: gainsboro;
@@ -836,8 +839,6 @@ label {
     border-radius: 5px;
     border: 1px solid black;
 }
-
-
 
 
 
