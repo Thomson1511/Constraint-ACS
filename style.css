@@ -344,9 +344,9 @@ label {
 .selector{
     position: absolute;
     right: 3vw;
-    top: 35vh;
+    top: 33.5vh;
     width: 15vw;
-    height: 41vh;
+    height: 44.5vh;
     background-color: gainsboro;
     display: block;
 }
@@ -689,6 +689,21 @@ label {
 
 /* Választék */
 
+#thirteenthGroup:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#thirteenthGroup:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#thirteenthGroup:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
 #indRelTen:checked + .check svg {
     stroke: #4285f4;
 }
@@ -840,6 +855,29 @@ label {
     border: 1px solid black;
 }
 
+#imageSize0, #imageSize1{
+    width: 14px;
+    height: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 15px #1e3a4b;;
+}
+
+.bulls{
+    width: 5vw;
+    height: 3vh;
+    background-color: #00aeac;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25vh;
+    left: 8vw;
+}
+.bulls:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
 
 
 @media only screen and (max-width: 1300px) {
