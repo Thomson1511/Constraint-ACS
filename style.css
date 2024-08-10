@@ -964,9 +964,9 @@ label {
     }
     .selector{
         width: 17vw;
-        top: 27vh;
+        top: 20vh;
         right: 1.5vw;
-        height: 50vh;
+        height: 67vh;
     }
     .selector label{
         margin-left: 0.5vw;
@@ -990,5 +990,26 @@ label {
         outline: none;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
+    }
+
+    .errors{
+        bottom: 2vh;
+        left: 4vw;
+        height: 7vh;
+        width: 6vw;
+        font-size: 30px;
+    }
+    .errorsHeader{
+        bottom: 8.2vh;
+        left: 5.4vw;
+        height: 1.5vh;
+        width: 3.4vw;
+        font-size: 14px;
+    }
+    .bulls{
+        width: 5vw;
+        height: 3vh;
+        top: 25vh;
+        left: 5vw;
     }
 }
