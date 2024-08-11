@@ -1615,7 +1615,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LYBE, LYBT",
         Via: "BABIT, KEROP, PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 290,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1641,7 +1641,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LYPG, LYTV, LDSP, LDDU",
         Via: "KEROP, PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 330,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1667,7 +1667,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LYNI, LQ**",
         Via: "BABIT, KEROP, PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 330,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1694,7 +1694,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LBSF, LWSK",
         Via: "BABIT, KEROP, PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 370,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1720,7 +1720,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LRTR, LRAR",
         Via: "BABIT",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 250,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1800,7 +1800,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LHBP, LHDC, LHTL",
         Via: "PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 300,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1827,7 +1827,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LZIB",
         Via: "TONDO, PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 320,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -1853,7 +1853,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LOWW",
         Via: "TONDO, PARAK",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 340,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2010,7 +2010,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LRTM",
         Via: "KARIL, NARKA, BUDOP",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 330,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2036,7 +2036,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LRSB",
         Via: "NARKA, BUDOP, DEGET, TEGRI",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 350,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2062,7 +2062,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LROP, LRBS",
         Via: "ALL COPs",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 370,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2167,7 +2167,7 @@ let constraint = [
         DepartureOrArrival: "D",
         AirportCodes: "LR** (except: TR/AR/OD/SM/BM/CL)",
         Via: "ALL COPs",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 340,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2194,7 +2194,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LHBP, LHKE, LHTL, LHKK",
         Via: "ALL COPs",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 320,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2221,7 +2221,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LHDC",
         Via: "NARKA",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 120,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2247,7 +2247,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LZIB,LZPP, LZSL, LHSM, LHPP, LHPR",
         Via: "ALL COPs",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 340,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2274,7 +2274,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LZKZ, LZTT",
         Via: "NARKA",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 280,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2301,7 +2301,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LZKZ, LZTT",
         Via: "KARIL",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 240,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2328,7 +2328,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LOWW",
         Via: "ALL COPs",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 360,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2355,7 +2355,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LDZA",
         Via: "MOPUG, TEGRI",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 360,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -2381,7 +2381,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "EPKK, EPKT, EPRZ",
         Via: "KARIL, NARKA",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 360,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -3004,8 +3004,7 @@ let constraint = [
         TLHigher: false,
         OddFL: false,
         AtSummer: false,
-        Group: 10,
-        importance: 1
+        Group: 10
     },
     { // 138
         From: "Bratislava FIR",
@@ -3031,8 +3030,7 @@ let constraint = [
         TLHigher: false,
         OddFL: false,
         AtSummer: false,
-        Group: 10,
-        importance: 1
+        Group: 10
     },
     { // 139
         From: "Bratislava FIR",
@@ -3058,8 +3056,7 @@ let constraint = [
         TLHigher: false,
         OddFL: false,
         AtSummer: false,
-        Group: 10,
-        importance: 1
+        Group: 10
     },
     { // 140
         From: "Bratislava FIR",
@@ -4188,7 +4185,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "LHBP",
         Via: "All Cops",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 340,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -4242,7 +4239,7 @@ let constraint = [
         DepartureOrArrival: "A",
         AirportCodes: "UKLL, UKLI",
         Via: "All Cops",
-        ConditionACIn: "atFLorBelow",
+        ConditionACIn: "atFL",
         MainFL: 310,
         ConditionToReach: "nothing",
         ReachFL: 0,
@@ -4275,6 +4272,16 @@ document.addEventListener('keydown', function (event) {
         showHint();
     }
 });
+
+let VersionNumbers = [
+    LOVV = "ATMI-IGUT-67-24",
+    LZBB = "ATMI-IGUT-56-24",
+    UKLV = "ATMI-IGUT-36-23",
+    LRBB = "ATMI-IGUT-24-24",
+    LYBA = "ATMI-IGUT-15-24",
+    LDZO = "ATMI-IGUT-48-24",
+    LJLA = "ATMI-IGUT-04-23"
+];
 
 let CurrentConstraintIndex = 0;
 let filteredConstraints = []; 
@@ -4411,9 +4418,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if (CurrentConstraint.ConditionACIn === "SubjectToAR"){
                 hintText += `Subject to App. Req. <br>`;
-            }
-            else if (CurrentConstraint.ConditionACIn === "atFLorBelow"){
-                hintText += `At FL or below: `;
             }
             else{
                 hintText += `${CurrentConstraint.ConditionACIn} `;
