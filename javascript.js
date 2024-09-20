@@ -4319,7 +4319,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('eleventhGroup').addEventListener('change', filterConstraints);
     document.getElementById('twelfthGroup').addEventListener('change', filterConstraints);
     document.getElementById('thirteenthGroup').addEventListener('change', filterConstraints);
-    document.getElementById('importantGroup').addEventListener('change', filterConstraints);
     // Első constraint objektum beolvasása
 
     constraint = shuffle(constraint);
@@ -4343,7 +4342,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const eleventhGroupChecked = document.getElementById('eleventhGroup').checked;
         const twelfthGroupChecked = document.getElementById('twelfthGroup').checked;
         const thirteenthGroupChecked = document.getElementById('thirteenthGroup').checked;
-        const importantGroupChecked = document.getElementById('importantGroup').checked;
 
         filteredConstraints = constraint.filter(constraint => {
             return (firstGroupChecked && constraint.Group === 1) ||
@@ -4358,8 +4356,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 (tenthGroupChecked && constraint.Group === 10) ||
                 (eleventhGroupChecked && constraint.Group === 11) ||
                 (twelfthGroupChecked && constraint.Group === 12) ||
-                (thirteenthGroupChecked && constraint.Group === 13) ||
-                (importantGroupChecked && constraint.importance === 1);
+                (thirteenthGroupChecked && constraint.Group === 13);
         });
 
         if (filteredConstraints.length === 0) {

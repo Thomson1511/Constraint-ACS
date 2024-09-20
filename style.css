@@ -346,7 +346,7 @@ label {
     right: 3vw;
     top: 33.5vh;
     width: 15vw;
-    height: 47vh;
+    height: 44vh;
     background-color: gainsboro;
     display: block;
 }
@@ -705,21 +705,6 @@ label {
 }
 
 /* Választék */
-
-#importantGroup:checked + .check svg {
-    stroke: #4285f4;
-}
-
-#importantGroup:checked + .check svg path {
-    stroke-dashoffset: 60;
-    transition: all 0.3s linear;
-}
-
-#importantGroup:checked + .check svg polyline {
-    stroke-dashoffset: 42;
-    transition: all 0.2s linear;
-    transition-delay: 0.15s;
-}
 
 #indRelTen:checked + .check svg {
     stroke: #4285f4;
