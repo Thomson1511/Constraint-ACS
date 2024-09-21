@@ -893,7 +893,7 @@ label {
         display: block;
     }
     .forth-section{
-        height: 20vh;
+        height: 16vh;
         width: 80vw;
     }
     .first-section{
@@ -1003,10 +1003,25 @@ label {
         height: 7vh;
     }
     .forth-left{
-        width: 40vw;
+        width: 45vw;
+        height: 16vh;
     }
-
-
+    .forth-left-top{
+    width: 40vw;
+    margin: 1vh 0 0 2.5vw;
+    }
+    .forth-left-bot{
+        margin-top: 1vh;
+    }
+    .forth-left-bot select{
+        width: 40vw;
+        margin-bottom: 1vh;
+    }
+    .forth-left-bot input{
+        display: block;
+        width: 15vw;
+        margin-left: 15vw;
+    }
 
 
 
