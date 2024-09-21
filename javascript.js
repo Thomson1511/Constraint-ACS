@@ -4263,7 +4263,7 @@ let constraint = [
   ];
   
   //console.log(constraint[0]);
-  
+
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter'){
         nextConstraint();
@@ -4393,6 +4393,18 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('hintContainer').innerHTML = hintText;
         displayPoints();
         showErrors();
+
+        // Mobil nézetben a label tartalmának frissítése
+        var label1 = document.querySelector('.TRFL');
+        var label2 = document.querySelector('.TRSL');
+        var label3 = document.querySelector('.TRTL');
+        var label4 = document.querySelector('.TRFIL');
+        if (window.innerWidth <= 768) {
+            label1.textContent = "auto Rev";
+            label2.textContent = "early";
+            label3.textContent = "TL H110";
+            label4.textContent = "at Sum."
+        }
     }
 
     function displayPoints(){
