@@ -1022,7 +1022,9 @@ label {
         width: 15vw;
         margin-left: 15vw;
     }
-
+    .points{
+        font-size: 20px;
+    }
 
 
 
