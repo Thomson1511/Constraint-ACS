@@ -887,9 +887,10 @@ label {
         width: 80vw;
     }
     .third-section{
-        height: 15vh;
+        height: 13vh;
         width: 80vw;
         margin-top: 1vh;
+        display: block;
     }
     .forth-section{
         height: 20vh;
@@ -962,9 +963,45 @@ label {
     .second-section select:nth-child(3){
         margin-left: 2vw;
     }
-
-
-
+    .third-left, .third-center{
+        display: block;
+        width: 80vw;
+        height: 5vh;
+    }
+    .third-left-bot, .third-left-top, .third-left-mid{
+        display: inline;
+        margin-left: 3vw;
+    }
+    .third-left{
+        margin-top: 5vh;
+        height: 2.5vh;
+    }
+    .third-center{
+        height: 4vh;
+    }
+    .third-center-top{
+        width: 40vw;
+        position: absolute;
+        top: 38vh;
+        left: 26vw;
+    }
+    .third-center-bot{
+        height: 4vh;
+    }
+    .third-center-bot input{
+        width: 15vw;
+    }
+    .third-right-top{
+        margin-top: 0;
+    }
+    .third-right-bot, .third-right-top{
+        margin-left: 17vw
+    }
+    .third-right{
+        display: block;
+        width: 80vw;
+        height: 7vh;
+    }
 
 
 
