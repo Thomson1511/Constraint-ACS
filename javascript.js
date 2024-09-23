@@ -4277,6 +4277,9 @@ const selector = document.querySelector('.selector');
 const mobileSelector = document.querySelector('.mobileSelector');
 const chevron1 = mobileSelector.querySelector('.chevron1');
 const chevron2 = mobileSelector.querySelector('.chevron2');
+const mobileError = document.querySelector('.errors');
+const mobileErrorHeader = document.querySelector('.errorsHeader')
+
 
 mobileSelector.addEventListener('click', function() {
     if (selector.classList.contains('show')) {
@@ -4287,6 +4290,8 @@ mobileSelector.addEventListener('click', function() {
         // Képek váltása
         chevron1.style.display = 'block'; // Eltávolítja az első képet
         chevron2.style.display = 'none'; // Megjeleníti a másodikat
+        mobileError.style.display = 'flex';
+        mobileErrorHeader.style.display = 'flex';
     } else {
         selector.classList.remove('hide'); // Eltávolítjuk a kiúsztatást
         selector.classList.add('show'); // Beúsztatás
@@ -4295,6 +4300,8 @@ mobileSelector.addEventListener('click', function() {
         // Képek váltása
         chevron1.style.display = 'none'; // Eltávolítja a második képet
         chevron2.style.display = 'block'; // Megjeleníti az elsőt
+        mobileError.style.display = 'none';
+        mobileErrorHeader.style.display = 'none';
     }
 });
 

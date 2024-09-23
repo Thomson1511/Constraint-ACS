@@ -1133,6 +1133,12 @@ display: none;
         animation-name: slideOut; /* Kiúsztatás */
         animation-fill-mode: forwards; /* Megtartja az animáció végső állapotát */
     }
+    .selector label{
+        margin-left: 13vw;
+    }
+    .selector label:first-child{
+        margin-top: 25vh;
+    }
     #hintContainer{
         display: none;
     }
