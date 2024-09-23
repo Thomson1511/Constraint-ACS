@@ -829,7 +829,7 @@ display: none;
     left: 47.2vw;
     height: 5vh;
     width: 6vw;
-    background-color: yellow;
+    background-color: #00aeac;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -1048,12 +1048,12 @@ display: none;
     .errors{
         width: 20vw;
         left: 40vw;
-        bottom: 5vh;
+        top: 90vh;
     }
     .errorsHeader{
         width: 13vw;
         left: 43.5vw;
-        bottom: 9vh;
+        top: 89vh;
     }
     .mobileSelector{
         display: flex;
