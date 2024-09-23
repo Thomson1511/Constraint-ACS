@@ -1065,10 +1065,39 @@ display: none;
         background-color: #00aeac;
         align-items: center;
         border-radius: 5px 0 0 5px;
+        animation-duration: 0.5s;
     }
     .mobileSelector img{
         width: 5vw;
         height: auto;
+    }
+    .mobileSelector.show {
+        animation-name: mobileSlideIn; /* Beúsztatás */
+        animation-duration: 0.5s; /* Időtartam */
+        animation-fill-mode: forwards; /* Megtartja a végső állapotot */
+    }
+    
+    .mobileSelector.hide {
+        animation-name: mobileSlideOut; /* Kiúsztatás */
+        animation-duration: 0.5s; /* Időtartam */
+        animation-fill-mode: forwards; /* Megtartja a végső állapotot */
+    }
+
+    @keyframes mobileSlideIn {
+        from {
+            right: 0; /* Kezdő pozíció */
+        }
+        to {
+            right: 95vw; /* Végső pozíció */
+        }
+    }
+    @keyframes mobileSlideOut {
+        from {
+            right: 95vw; /* Kezdő pozíció */
+        }
+        to {
+            right: 0; /* Végső pozíció */
+        }
     }
 
     @keyframes slideIn {

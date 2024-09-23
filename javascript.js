@@ -4275,16 +4275,30 @@ document.addEventListener('keydown', function (event) {
 
 const selector = document.querySelector('.selector');
 const mobileSelector = document.querySelector('.mobileSelector');
+const chevron1 = mobileSelector.querySelector('.chevron1');
+const chevron2 = mobileSelector.querySelector('.chevron2');
 
 mobileSelector.addEventListener('click', function() {
     if (selector.classList.contains('show')) {
         selector.classList.remove('show');
         selector.classList.add('hide'); // Kiúsztatás
+        mobileSelector.classList.remove('show');
+        mobileSelector.classList.add('hide'); // Kiúsztatás
+        // Képek váltása
+        chevron1.style.display = 'block'; // Eltávolítja az első képet
+        chevron2.style.display = 'none'; // Megjeleníti a másodikat
     } else {
         selector.classList.remove('hide'); // Eltávolítjuk a kiúsztatást
         selector.classList.add('show'); // Beúsztatás
+        mobileSelector.classList.remove('hide'); // Eltávolítjuk a kiúsztatást
+        mobileSelector.classList.add('show'); // Beúsztatás
+        // Képek váltása
+        chevron1.style.display = 'none'; // Eltávolítja a második képet
+        chevron2.style.display = 'block'; // Megjeleníti az elsőt
     }
 });
+
+
 
 
 let VersionNumbers = [
