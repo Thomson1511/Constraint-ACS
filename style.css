@@ -7,6 +7,7 @@ body{
 
 .container {
     background-color: #F1F1E6 ;
+    border-radius: 10px;
     width: 60vw;
     height: 70vh;
     margin-top: 12vh;
@@ -340,6 +341,7 @@ label {
     height: 44vh;
     background-color: gainsboro;
     display: block;
+    border-radius: 10px;
 }
 .selector label{
     margin-left: 1vw;
@@ -356,6 +358,8 @@ label {
     width: 15vw;
     height: 28vh;
     background-color: gainsboro;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 .selectorImages{
     height: 1.5vh;
@@ -874,7 +878,7 @@ label {
 @media only screen and (max-width: 767px) {
     .container{
         width: 80vw;
-        height: 90vh;
+        height: 80vh;
         margin-top: 5vh;
         margin-left: 10vw;
     }
@@ -894,7 +898,7 @@ label {
         display: block;
     }
     .forth-section{
-        height: 16vh;
+        height: 18vh;
         width: 80vw;
     }
     .first-section{
@@ -1005,7 +1009,10 @@ label {
     }
     .forth-left{
         width: 45vw;
-        height: 16vh;
+        height: 18vh;
+    }
+    .forth-right{
+        height: 18vh;
     }
     .forth-left-top{
     width: 40vw;
