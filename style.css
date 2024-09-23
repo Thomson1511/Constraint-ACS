@@ -1047,13 +1047,13 @@ display: none;
     }
     .errors{
         width: 20vw;
-        left: 40vw;
-        top: 90vh;
+        left: 3vw;
+        top: 3vh;
     }
     .errorsHeader{
         width: 13vw;
-        left: 43.5vw;
-        top: 89vh;
+        left: 6.5vw;
+        top: 2vh;
     }
     .mobileSelector{
         display: flex;
