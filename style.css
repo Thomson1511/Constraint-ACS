@@ -901,6 +901,9 @@ label {
         height: 18vh;
         width: 80vw;
     }
+    .fifth-section{
+        width: 80vw;
+    }
     .first-section{
         display: inline-block;
     }
@@ -1032,13 +1035,20 @@ label {
     }
     .points{
         font-size: 20px;
-        width: 15vw;
+        width: 20vw;
         margin-right: 5vw;
     }
     .hint{
+        width: 20vw;
         margin-right: 5vw;
     }
-
+    .errors{
+        width: 20vw;
+        left: 45vw;
+    }
+    .errorsHeader{
+        width: 13vw;
+    }
 
 
     .selector{
