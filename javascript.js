@@ -4273,6 +4273,20 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+const selector = document.querySelector('.selector');
+const mobileSelector = document.querySelector('.mobileSelector');
+
+mobileSelector.addEventListener('click', function() {
+    if (selector.classList.contains('show')) {
+        selector.classList.remove('show');
+        selector.classList.add('hide'); // Kiúsztatás
+    } else {
+        selector.classList.remove('hide'); // Eltávolítjuk a kiúsztatást
+        selector.classList.add('show'); // Beúsztatás
+    }
+});
+
+
 let VersionNumbers = [
     LOVV = "ATMI-IGUT-67-24",
     LZBB = "ATMI-IGUT-56-24",

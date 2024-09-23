@@ -332,6 +332,9 @@ label {
     right: 0;
   }
 
+.mobileSelector{
+display: none;
+}
 
 .selector{
     position: absolute;
@@ -1044,15 +1047,62 @@ label {
     }
     .errors{
         width: 20vw;
-        left: 45vw;
+        left: 40vw;
+        bottom: 5vh;
     }
     .errorsHeader{
         width: 13vw;
+        left: 43.5vw;
+        bottom: 9vh;
+    }
+    .mobileSelector{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 42vh;
+        width: 5vw;
+        height: 10vh;
+        background-color: #00aeac;
+        align-items: center;
+        border-radius: 5px 0 0 5px;
+    }
+    .mobileSelector img{
+        width: 5vw;
+        height: auto;
     }
 
-
+    @keyframes slideIn {
+        from {
+            right: -100vw; /* Kezdő pozíció */
+        }
+        to {
+            right: 0; /* Végső pozíció */
+        }
+    }
+    @keyframes slideOut {
+        from {
+            right: 0; /* Kezdő pozíció */
+        }
+        to {
+            right: -100vw; /* Végső pozíció */
+        }
+    }
     .selector{
-        display: none;
+        position: fixed;
+        right: -100vw; /* Start off-screen */
+        top: 0;
+        width: 100vw;
+        height: 100vh; /* Full height */
+        background-color: gainsboro;
+        animation-duration: 0.5s;
+    }
+    .selector.show {
+        animation-name: slideIn; /* Beúsztatás */
+        animation-fill-mode: forwards; /* Megtartja az animáció végső állapotát */
+    }
+    .selector.hide {
+        animation-name: slideOut; /* Kiúsztatás */
+        animation-fill-mode: forwards; /* Megtartja az animáció végső állapotát */
     }
     #hintContainer{
         display: none;
