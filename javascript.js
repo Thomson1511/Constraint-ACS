@@ -4292,7 +4292,7 @@ mobileSelector.addEventListener('click', function() {
         chevron2.style.display = 'none'; // Megjeleníti a másodikat
         mobileError.style.display = 'flex';
         mobileErrorHeader.style.display = 'flex';
-        mobileSelector.style.borderRadius = '0 5px 5px 0';
+        mobileSelector.style.borderRadius = '5px 0 0 5px';
     } else {
         selector.classList.remove('hide'); // Eltávolítjuk a kiúsztatást
         selector.classList.add('show'); // Beúsztatás
@@ -4303,7 +4303,7 @@ mobileSelector.addEventListener('click', function() {
         chevron2.style.display = 'block'; // Megjeleníti az elsőt
         mobileError.style.display = 'none';
         mobileErrorHeader.style.display = 'none';
-        mobileSelector.style.borderRadius = '5px 0 0 5px';
+        mobileSelector.style.borderRadius = '0 5px 5px 0';
     }
 });
 
