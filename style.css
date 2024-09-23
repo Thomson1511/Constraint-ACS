@@ -1032,6 +1032,11 @@ label {
     }
     .points{
         font-size: 20px;
+        width: 15vw;
+        margin-right: 5vw;
+    }
+    .hint{
+        margin-right: 5vw;
     }
 
 
