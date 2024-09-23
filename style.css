@@ -1044,6 +1044,7 @@ display: none;
     .hint{
         width: 20vw;
         margin-right: 5vw;
+        font-size: 15px;
     }
     .errors{
         width: 20vw;
