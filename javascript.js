@@ -4565,6 +4565,10 @@ document.addEventListener("DOMContentLoaded", function() {
             hintText += `Summer FLAS<br>`;
         }
         document.getElementById('hintContainer').innerHTML = hintText;
+
+        if (window.innerWidth <= 768) {
+            alert(hintText.replace(/<br>/g, '\n'));
+        }
     }
 
     function removeBulls(){
