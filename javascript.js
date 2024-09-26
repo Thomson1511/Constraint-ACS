@@ -4336,15 +4336,27 @@ mobileSelector.addEventListener('click', function() {
 
 
 
-let VersionNumbers = [
-    LOVV = "ATMI-IGUT-67-24",
-    LZBB = "ATMI-IGUT-56-24",
-    UKLV = "ATMI-IGUT-36-23",
-    LRBB = "ATMI-IGUT-24-24",
-    LYBA = "ATMI-IGUT-15-24",
-    LDZO = "ATMI-IGUT-48-24",
-    LJLA = "ATMI-IGUT-04-23"
-];
+let VersionNumbers = {
+    LOVV: "ATMI-IGUT-67-24",
+    LZBB: "ATMI-IGUT-56-24",
+    UKLV: "ATMI-IGUT-36-23",
+    LRBB: "ATMI-IGUT-24-24",
+    LYBA: "ATMI-IGUT-15-24",
+    LDZO: "ATMI-IGUT-48-24",
+    LJLA: "ATMI-IGUT-04-23"
+};
+
+function ShowVersionNo() {
+    let versionNoElement = document.getElementById("VersionNo");
+
+    let output = '';
+    for (let key in VersionNumbers) {
+        output += key + " = " + VersionNumbers[key] + "<br>";
+    }
+
+    versionNoElement.innerHTML = output;
+    versionNoElement.style.cursor = "auto";
+}
 
 let CurrentConstraintIndex = 0;
 let filteredConstraints = []; 
