@@ -475,7 +475,7 @@ let constraint = [
         EarlyToC: false,
         TLHigher: false,
         OddFL: false,
-        AtSummer: true,
+        AtSummer: false,
         Group: 1
     },
     { // 21
@@ -501,7 +501,7 @@ let constraint = [
         EarlyToC: false,
         TLHigher: false,
         OddFL: false,
-        AtSummer: true,
+        AtSummer: false,
         Group: 1
     },
     { // 22
