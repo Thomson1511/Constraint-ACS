@@ -4710,7 +4710,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         else{
             errorNumber += 1;
-            ErrorList.push(CurrentConstraint.AirportCodes + "-" + CurrentConstraint.DepartureOrArrival + " Via: " + CurrentConstraint.Via)
+            ErrorList.push(CurrentConstraint.AirportCodes + "-" + CurrentConstraint.DepartureOrArrival + " Via: " + 
+                CurrentConstraint.Via + CurrentConstraint.ConditionACIn + CurrentConstraint.MainFL)
             showErrors();
             //console.log("Error list:" + ErrorList.join(", "));
         }
