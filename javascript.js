@@ -4288,7 +4288,6 @@ let constraint = [
     }
   ];
   
-  //console.log(constraint[0]);
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter'){
@@ -4455,15 +4454,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else{
             indAirport.textContent = "Arr: " + CurrentConstraint.AirportCodes;
         }
-        //indAirport.textContent = CurrentConstraint.AirportCodes;
         indVia.textContent = CurrentConstraint.Via;
         indTo.textContent = CurrentConstraint.To;
-        //departure or arrival color
-        /*if (CurrentConstraint.DepartureOrArrival === "D") {
-            indAirport.style.backgroundColor = "#00aeac ";
-        } else if (CurrentConstraint.DepartureOrArrival === "A") {
-            indAirport.style.backgroundColor = "#e22030 ";
-        }*/
         hintText = "";
         document.getElementById('hintContainer').innerHTML = hintText;
         displayPoints();
@@ -4609,7 +4601,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function removeBulls(){
+    /*function removeBulls(){
         if (ErrorList.length > 0){
             errorNumber -= 1;
             ErrorList.pop();
@@ -4618,7 +4610,7 @@ document.addEventListener("DOMContentLoaded", function() {
         else{
             alert("Nincs hiba!")
         }
-    }
+    }*/
 
     function nextConstraint() {
         const selectedCondAcIn = document.getElementById('indCondAcIn').value;
