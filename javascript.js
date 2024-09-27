@@ -4557,8 +4557,11 @@ document.addEventListener("DOMContentLoaded", function() {
             else if(CurrentConstraint.SpecialConditionOne === "TRA"){
                 hintText += `Spec1: If TRA06D active<br>`;
             }
-            else{
+            else if(CurrentConstraint.SpecialConditionOne === "EDARAN"){
                 hintText += `Spec1: If via EDEMU, ARFOX, ANEXA<br>`;
+            }
+            else{
+                hintText += `Spec1: Lower even FL subject ACT/REV<br>`;
             }
         }
         if (CurrentConstraint.SpecialConditionTwo !== "nothing"){
