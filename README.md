@@ -7,11 +7,11 @@ Leiras
 1: Itt látható a segítség ha a Hint gombra kattintasz  
 2: A repterek előtt Arrival/Departure látható rövidítve  
 3: Ez a mező különbözik telón és gépen, telón rövidítve van:  
-&nbsp;&nbsp;&nbsp;&nbsp;auto Rev => Subject to automatic REV to FL 190  
--early => Early Transfer of Comm. req. (10NM bfr. XOMBA)  
--TL H110 => If TL higher than FL 110, verbal coord. needed  
--Odd RFL => Odd RFL  
--at Sum => At Summer  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-auto Rev => Subject to automatic REV to FL 190  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-early => Early Transfer of Comm. req. (10NM bfr. XOMBA)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-TL H110 => If TL higher than FL 110, verbal coord. needed  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Odd RFL => Odd RFL  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-at Sum => At Summer  
 4: Segítség  
 5: Következő constraintra lépés (csak helyes válaszra lép tovább)  
 6: Hibák száma, ha végig értél az összesen kapsz egy értesítést azokkal a constraintekkel amiket elrontottál  
