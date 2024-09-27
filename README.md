@@ -7,7 +7,7 @@ Leiras
 1: Itt látható a segítség ha a Hint gombra kattintasz  
 2: A repterek előtt Arrival/Departure látható rövidítve  
 3: Ez a mező különbözik telón és gépen, telón rövidítve van:  
--auto Rev => Subject to automatic REV to FL 190  
+&nbsp;&nbsp;&nbsp;&nbsp;auto Rev => Subject to automatic REV to FL 190  
 -early => Early Transfer of Comm. req. (10NM bfr. XOMBA)  
 -TL H110 => If TL higher than FL 110, verbal coord. needed  
 -Odd RFL => Odd RFL  
