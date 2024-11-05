@@ -4487,6 +4487,13 @@ function ShowVersionNo() {
     versionNoElement.style.cursor = "auto";
 }
 
+//Refresh funkcio
+function RefreshConst(){
+    constraint = shuffle(constraint);
+    filterConstraints();
+    displayCurrentConstraint();
+}
+
 let CurrentConstraintIndex = 0;
 let filteredConstraints = []; 
 let hintText = "";
