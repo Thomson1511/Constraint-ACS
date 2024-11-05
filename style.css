@@ -881,6 +881,20 @@ display: none;
     box-shadow: 0px 2px 15px #1e3a4b;;
 }
 @media only screen and (max-width: 767px) {
+    #RefreshConstraints{
+        display: none;
+    }
+    #RefreshConstraintsMobile{
+        position: relative;
+        width: 20vw;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .container{
         width: 80vw;
         height: 80vh;
