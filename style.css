@@ -382,6 +382,9 @@ display: none;
     padding: 10px;
     cursor: pointer;
 }
+#RefreshConstraintsMobile{
+    display: none;
+}
 
 .selectorImages{
     height: 1.5vh;
@@ -885,6 +888,7 @@ display: none;
         display: none;
     }
     #RefreshConstraintsMobile{
+        display: block;
         position: relative;
         width: 20vw;
         background-color: white;
