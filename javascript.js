@@ -4825,7 +4825,20 @@ document.addEventListener("DOMContentLoaded", function() {
                     alert('Congratulations! You have completed all the constraints.');
                 }
                 else{
-                    alert('Nice try!' + '\nYour mistakes:\n' + ErrorList.join("\n"));
+                    //uj
+                    const errorContent = ErrorList.join("\n");
+                    const blob = new Blob([errorContent], { type: 'text/plain' });
+                    const downloadLink = document.createElement('a');
+                    
+                    downloadLink.href = window.URL.createObjectURL(blob);
+                    downloadLink.download = 'Constraints_ErrorList.txt'; // File name for download
+                    downloadLink.textContent = 'Download ErrorList';
+                    
+                    // Append the download link to the DOM so the user can click it
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();  // Automatically trigger the download
+                    document.body.removeChild(downloadLink);  // Clean up the link from DOM
+
                     ErrorList.length = 0;
                     errorNumber = 0;
                 }
