@@ -1520,7 +1520,7 @@ let constraint = [
         ReleasedFromTen: false,
         ReleasedUc: false,
         SpecialConditionOne: "atSummer",
-        SpecialConditionTwo: "nothing",
+        SpecialConditionTwo: "atFL",
         SpecialConditionFL: 330,
         AutoREV: false,
         EarlyToC: false,
