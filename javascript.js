@@ -4487,6 +4487,17 @@ function ShowVersionNo() {
     versionNoElement.style.cursor = "auto";
 }
 
+function removeLastError(){
+    if (ErrorList.length > 0){
+        errorNumber -= 1;
+        ErrorList.pop();
+        showErrors();
+    }
+    else{
+        alert("Nincs hiba!")
+    }
+}
+
 //Refresh funkcio
 function RefreshConst(){
     constraint = shuffle(constraint);
