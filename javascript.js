@@ -4270,6 +4270,37 @@ document.addEventListener('keydown', function (event) {
     if (event.key === 'h'){
         showHint();
     }
+    if (event.key === 'a'){
+        const selectElement = document.getElementById('indCondAcIn');
+        const inputElement = document.getElementById('indMainFl');
+
+        selectElement.value = 'atFL';
+        inputElement.focus();
+    }
+    if (event.key === 'c'){
+        const selectElement = document.getElementById('indCondAcIn');
+        const inputElement = document.getElementById('indMainFl');
+
+        selectElement.value = 'inClimb';
+        inputElement.focus();
+    }
+    if (event.key === 'd'){
+        const selectElement = document.getElementById('indCondAcIn');
+        const inputElement = document.getElementById('indMainFl');
+
+        selectElement.value = 'inDescent';
+        inputElement.focus();
+    }
+    if (event.key === 's'){
+        const checkboxElement = document.getElementById('indAtSummer');
+
+        if(checkboxElement.checked){
+            checkboxElement.checked = false;
+        }
+        else{
+            checkboxElement.checked = true;
+        }
+    }
 });
 
 const selector = document.querySelector('.selector');
