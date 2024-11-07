@@ -2743,7 +2743,7 @@ let constraint = [
         AtSummer: true,
         Group: 9
     },
-    { // 126
+    { // 126 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2769,7 +2769,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 127
+    { // 127 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2795,7 +2795,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 129
+    { // 129 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2821,7 +2821,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 130
+    { // 130 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2847,7 +2847,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 131
+    { // 131 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2874,7 +2874,7 @@ let constraint = [
         Group: 10,
         importance: 1
     },
-    { // 132
+    { // 132 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2901,7 +2901,7 @@ let constraint = [
         Group: 10,
         importance: 1
     },
-    { // 133
+    { // 133 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "D",
@@ -2927,7 +2927,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 134
+    { // 134 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -2953,7 +2953,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 135
+    { // 135 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -2979,7 +2979,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 136
+    { // 136 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3006,85 +3006,7 @@ let constraint = [
         Group: 10,
         importance: 1
     },
-    { // 137
-        From: "Bratislava FIR",
-        To: "Budapest FIR",
-        DepartureOrArrival: "A",
-        AirportCodes: "LHBP, LHTL, LHBS",
-        Via: "ARFOX",
-        ConditionACIn: "inDescent",
-        MainFL: 150,
-        ConditionToReach: "crossLoRBelow",
-        ReachFL: 190,
-        ReleasedForTurn: true,
-        ReleasedForDescent: true,
-        ReleasedForClimb: false,
-        ReleasedUntil: 10000,
-        ReleasedFromTen: true,
-        ReleasedUc: false,
-        SpecialConditionOne: "nothing",
-        SpecialConditionTwo: "nothing",
-        SpecialConditionFL: 0,
-        AutoREV: false,
-        EarlyToC: false,
-        TLHigher: false,
-        OddFL: false,
-        AtSummer: false,
-        Group: 10
-    },
-    { // 138
-        From: "Bratislava FIR",
-        To: "Budapest FIR",
-        DepartureOrArrival: "A",
-        AirportCodes: "LHBP, LHTL, LHBS",
-        Via: "ANEXA",
-        ConditionACIn: "inDescent",
-        MainFL: 130,
-        ConditionToReach: "crossLoRBelow",
-        ReachFL: 190,
-        ReleasedForTurn: true,
-        ReleasedForDescent: true,
-        ReleasedForClimb: false,
-        ReleasedUntil: 10000,
-        ReleasedFromTen: true,
-        ReleasedUc: false,
-        SpecialConditionOne: "nothing",
-        SpecialConditionTwo: "nothing",
-        SpecialConditionFL: 0,
-        AutoREV: false,
-        EarlyToC: false,
-        TLHigher: false,
-        OddFL: false,
-        AtSummer: false,
-        Group: 10
-    },
-    { // 139
-        From: "Bratislava FIR",
-        To: "Budapest FIR",
-        DepartureOrArrival: "A",
-        AirportCodes: "LHBP, LHTL, LHBS (dep LZIB)",
-        Via: "ANEXA",
-        ConditionACIn: "atFL",
-        MainFL: 130,
-        ConditionToReach: "nothing",
-        ReachFL: 0,
-        ReleasedForTurn: true,
-        ReleasedForDescent: true,
-        ReleasedForClimb: false,
-        ReleasedUntil: 10000,
-        ReleasedFromTen: true,
-        ReleasedUc: false,
-        SpecialConditionOne: "nothing",
-        SpecialConditionTwo: "nothing",
-        SpecialConditionFL: 0,
-        AutoREV: false,
-        EarlyToC: false,
-        TLHigher: false,
-        OddFL: false,
-        AtSummer: false,
-        Group: 10
-    },
-    { // 140
+    { // 140 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3111,59 +3033,7 @@ let constraint = [
         Group: 10,
         importance: 1
     },
-    { // 141
-        From: "Bratislava FIR",
-        To: "Budapest FIR",
-        DepartureOrArrival: "A",
-        AirportCodes: "LHKE",
-        Via: "ARFOX, ANEXA",
-        ConditionACIn: "atFL",
-        MainFL: 190,
-        ConditionToReach: "nothing",
-        ReachFL: 0,
-        ReleasedForTurn: true,
-        ReleasedForDescent: true,
-        ReleasedForClimb: false,
-        ReleasedUntil: 10000,
-        ReleasedFromTen: true,
-        ReleasedUc: false,
-        SpecialConditionOne: "nothing",
-        SpecialConditionTwo: "nothing",
-        SpecialConditionFL: 0,
-        AutoREV: false,
-        EarlyToC: false,
-        TLHigher: false,
-        OddFL: false,
-        AtSummer: false,
-        Group: 10
-    },
-    { // 142
-        From: "Bratislava FIR",
-        To: "Budapest FIR",
-        DepartureOrArrival: "A",
-        AirportCodes: "LHKE (dep LZIB)",
-        Via: "ARFOX, ANEXA",
-        ConditionACIn: "atFL",
-        MainFL: 130,
-        ConditionToReach: "nothing",
-        ReachFL: 0,
-        ReleasedForTurn: true,
-        ReleasedForDescent: true,
-        ReleasedForClimb: false,
-        ReleasedUntil: 10000,
-        ReleasedFromTen: true,
-        ReleasedUc: false,
-        SpecialConditionOne: "nothing",
-        SpecialConditionTwo: "nothing",
-        SpecialConditionFL: 0,
-        AutoREV: false,
-        EarlyToC: false,
-        TLHigher: false,
-        OddFL: false,
-        AtSummer: false,
-        Group: 10
-    },
-    { // 143
+    { // 143 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3189,7 +3059,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 144
+    { // 144 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3215,7 +3085,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 145
+    { // 145 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3241,7 +3111,7 @@ let constraint = [
         AtSummer: true,
         Group: 10
     },
-    { // 147
+    { // 147 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3267,7 +3137,7 @@ let constraint = [
         AtSummer: true,
         Group: 10
     },
-    { // 148
+    { // 148 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
@@ -3284,7 +3154,7 @@ let constraint = [
         ReleasedFromTen: false,
         ReleasedUc: false,
         SpecialConditionOne: "atSummer",
-        SpecialConditionTwo: "nothing",
+        SpecialConditionTwo: "atFL",
         SpecialConditionFL: 350,
         AutoREV: false,
         EarlyToC: false,
@@ -3293,7 +3163,7 @@ let constraint = [
         AtSummer: false,
         Group: 10
     },
-    { // 149
+    { // 149 -
         From: "Bratislava FIR",
         To: "Budapest FIR",
         DepartureOrArrival: "A",
