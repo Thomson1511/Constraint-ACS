@@ -4865,11 +4865,27 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         else{
+            //Errorlist-hez hozzáadás
             errorNumber += 1;
-            ErrorList.push(CurrentConstraint.AirportCodes + "-" + CurrentConstraint.DepartureOrArrival + " Via: " + 
-                CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + " " + CurrentConstraint.MainFL)
+            if(CurrentConstraint.DepartureOrArrival == "A"){
+                //Arrivals
+                ErrorList.push("From: " + CurrentConstraint.From + " To: " + 
+                    CurrentConstraint.To + " " + CurrentConstraint.AirportCodes + 
+                    " - " + "Arrival" + " Via: " + 
+                    CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + 
+                    " " + CurrentConstraint.MainFL)
+            }
+            else{
+                ErrorList.push("From: " + CurrentConstraint.From + " To: " + 
+                    CurrentConstraint.To + " " + CurrentConstraint.AirportCodes + 
+                    " - " + "Departure" + " Via: " + 
+                    CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + 
+                    " " + CurrentConstraint.MainFL)
+            }
+            /*ErrorList.push(CurrentConstraint.AirportCodes + "-" + CurrentConstraint.DepartureOrArrival + " Via: " + 
+                CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + " " + CurrentConstraint.MainFL)*/
             showErrors();
-            //console.log("Error list:" + ErrorList.join(", "));
+            //ide kell
         }
 
 
