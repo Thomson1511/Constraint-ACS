@@ -4383,6 +4383,8 @@ function RefreshConst(){
 let CurrentConstraintIndex = 0;
 let filteredConstraints = []; 
 let hintText = "";
+let errorTextContent = "";
+let errorTextContentForDownl = "";
 let errorNumber = 0;
 let ErrorList = [];
 
@@ -4501,125 +4503,256 @@ document.addEventListener("DOMContentLoaded", function() {
         indPoints.textContent = (CurrentConstraintIndex + 1) + " / " + filteredConstraints.length;;
     }
 
-    function showHint() {
+    function ErrorText(){
         const CurrentConstraint = filteredConstraints[CurrentConstraintIndex];
-        hintText = "";
+        errorTextContent = "";
+        //errorTextContentForDownl
 
         if (CurrentConstraint.ConditionACIn !== "nothing"){
             if (CurrentConstraint.ConditionACIn === "atFL"){
-                hintText += `At: `;
+                errorTextContent += `At: `;
             }
             else if (CurrentConstraint.ConditionACIn === "inClimb"){
-                hintText += `In climb to: `;
+                errorTextContent += `In climb to: `;
             }
             else if (CurrentConstraint.ConditionACIn === "inDescent"){
-                hintText += `In descent to: `;
+                errorTextContent += `In descent to: `;
             }
             else if (CurrentConstraint.ConditionACIn === "SubjectToAR"){
-                hintText += `Subject to App. Req. <br>`;
+                errorTextContent += `Subject to App. Req. <br>`;
             }
             else{
-                hintText += `${CurrentConstraint.ConditionACIn} `;
+                errorTextContent += `${CurrentConstraint.ConditionACIn} `;
             }
             }
             
         if (CurrentConstraint.MainFL !== 0){
             if (CurrentConstraint.MainFL < 600){
-                hintText += `FL ${CurrentConstraint.MainFL}<br>`;
+                errorTextContent += `FL ${CurrentConstraint.MainFL}<br>`;
             } else{
-                hintText += `${CurrentConstraint.MainFL} ft<br>`;
+                errorTextContent += `${CurrentConstraint.MainFL} ft<br>`;
             }
         }
         if (CurrentConstraint.ConditionToReach !== "nothing"){
             if (CurrentConstraint.ConditionToReach === "crossLoRAbove"){
-                hintText += `Cross LoR above: `;
+                errorTextContent += `Cross LoR above: `;
             }
             else{
-                hintText += `Cross LoR below: `;
+                errorTextContent += `Cross LoR below: `;
         }
         }
         if (CurrentConstraint.ReachFL !== 0){
             if (CurrentConstraint.ReachFL < 600){
-                hintText += `FL ${CurrentConstraint.ReachFL}<br>`;
+                errorTextContent += `FL ${CurrentConstraint.ReachFL}<br>`;
             } else{
-                hintText += `${CurrentConstraint.ReachFL} ft<br>`;
+                errorTextContent += `${CurrentConstraint.ReachFL} ft<br>`;
             };
         }
         if (CurrentConstraint.ReleasedForTurn !== false){
-            hintText += `Released for turn<br>`;
+            errorTextContent += `Released for turn<br>`;
         }
         if (CurrentConstraint.ReleasedForDescent !== false){
-            hintText += `Released for descent<br>`;
+            errorTextContent += `Released for descent<br>`;
         }
         if (CurrentConstraint.ReleasedForClimb !== false){
-            hintText += `Released for climb<br>`;
+            errorTextContent += `Released for climb<br>`;
         }
         if (CurrentConstraint.ReleasedUntil !== 0){
             if (CurrentConstraint.ReleasedUntil < 600){
-                hintText += `FL ${CurrentConstraint.ReleasedUntil}<br>`;
+                errorTextContent += `FL ${CurrentConstraint.ReleasedUntil}<br>`;
             } else{
-                hintText += `${CurrentConstraint.ReleasedUntil} ft<br>`;
+                errorTextContent += `${CurrentConstraint.ReleasedUntil} ft<br>`;
             };
         }
         if (CurrentConstraint.ReleasedFromTen !== false){
-            hintText += `Released 10 NM before COP<br>`;
+            errorTextContent += `Released 10 NM before COP<br>`;
         }
         if (CurrentConstraint.ReleasedUc !== false){
-            hintText += `Released (upon contact?)<br>`;
+            errorTextContent += `Released (upon contact?)<br>`;
         }
         if (CurrentConstraint.SpecialConditionOne !== "nothing"){
             if (CurrentConstraint.SpecialConditionOne === "atSummer"){
-                hintText += `Spec1: at Summer<br>`;
+                errorTextContent += `Spec1: at Summer<br>`;
             }
             else if(CurrentConstraint.SpecialConditionOne === "AMLIBA"){
-                hintText += `Spec1: If via AMRAX - LITKU, BADOV<br>`;
+                errorTextContent += `Spec1: If via AMRAX - LITKU, BADOV<br>`;
             }
             else if(CurrentConstraint.SpecialConditionOne === "ARNeeded"){
-                hintText += `Spec1: Approval request needed<br>`;
+                errorTextContent += `Spec1: Approval request needed<br>`;
             }
             else if(CurrentConstraint.SpecialConditionOne === "TRA"){
-                hintText += `Spec1: If TRA06D active<br>`;
+                errorTextContent += `Spec1: If TRA06D active<br>`;
             }
             else if(CurrentConstraint.SpecialConditionOne === "EDARAN"){
-                hintText += `Spec1: If via EDEMU, ARFOX, ANEXA<br>`;
+                errorTextContent += `Spec1: If via EDEMU, ARFOX, ANEXA<br>`;
             }
             else{
-                hintText += `Spec1: Lower even FL subject ACT/REV<br>`;
+                errorTextContent += `Spec1: Lower even FL subject ACT/REV<br>`;
             }
         }
         if (CurrentConstraint.SpecialConditionTwo !== "nothing"){
             if (CurrentConstraint.SpecialConditionTwo === "atFL"){
-                hintText += `Spec2: At FL: <br>`;
+                errorTextContent += `Spec2: At FL: <br>`;
             }
             else if(CurrentConstraint.SpecialConditionTwo === "aboveFl"){
-                hintText += `Spec1: Above FL: `;
+                errorTextContent += `Spec1: Above FL: `;
             }
             else{
-                hintText += `Spec2: No constraint<br>`;
+                errorTextContent += `Spec2: No constraint<br>`;
             }
         }
         if (CurrentConstraint.SpecialConditionFL !== 0){
             if (CurrentConstraint.SpecialConditionFL < 600){
-                hintText += `Spec FL ${CurrentConstraint.SpecialConditionFL}<br>`;
+                errorTextContent += `Spec FL ${CurrentConstraint.SpecialConditionFL}<br>`;
             } else{
-                hintText += `Spec ${CurrentConstraint.SpecialConditionFL} ft<br>`;
+                errorTextContent += `Spec ${CurrentConstraint.SpecialConditionFL} ft<br>`;
             };
         }
         if (CurrentConstraint.AutoREV !== false){
-            hintText += `Subject to automatic REV<br>`;
+            errorTextContent += `Subject to automatic REV<br>`;
         }
         if (CurrentConstraint.EarlyToC !== false){
-            hintText += `Early ToC needed<br>`;
+            errorTextContent += `Early ToC needed<br>`;
         }
         if (CurrentConstraint.TLHigher !== false){
-            hintText += `if TL higher<br>`;
+            errorTextContent += `if TL higher<br>`;
         }
         if (CurrentConstraint.OddFL !== false){
-            hintText += `Odd FL<br>`;
+            errorTextContent += `Odd FL<br>`;
         }
         if (CurrentConstraint.AtSummer !== false){
-            hintText += `Summer FLAS<br>`;
+            errorTextContent += `Summer FLAS<br>`;
         }
+    }
+
+    function ErrorTextFD(){
+        const CurrentConstraint = filteredConstraints[CurrentConstraintIndex];
+        errorTextContentForDownl = "";
+
+        if (CurrentConstraint.ConditionACIn !== "nothing"){
+            if (CurrentConstraint.ConditionACIn === "atFL"){
+                errorTextContentForDownl += `At: `;
+            }
+            else if (CurrentConstraint.ConditionACIn === "inClimb"){
+                errorTextContentForDownl += `In climb to: `;
+            }
+            else if (CurrentConstraint.ConditionACIn === "inDescent"){
+                errorTextContentForDownl += `In descent to: `;
+            }
+            else if (CurrentConstraint.ConditionACIn === "SubjectToAR"){
+                errorTextContentForDownl += `Subject to App. Req.  `;
+            }
+            else{
+                 errorTextContentForDownl += `${CurrentConstraint.ConditionACIn} `;
+            }
+            }
+            
+        if (CurrentConstraint.MainFL !== 0){
+            if (CurrentConstraint.MainFL < 600){
+                 errorTextContentForDownl += `FL ${CurrentConstraint.MainFL} `;
+            } else{
+                 errorTextContentForDownl += `${CurrentConstraint.MainFL} ft `;
+            }
+        }
+        if (CurrentConstraint.ConditionToReach !== "nothing"){
+            if (CurrentConstraint.ConditionToReach === "crossLoRAbove"){
+                 errorTextContentForDownl += `Cross LoR above: `;
+            }
+            else{
+                 errorTextContentForDownl += `Cross LoR below: `;
+        }
+        }
+        if (CurrentConstraint.ReachFL !== 0){
+            if (CurrentConstraint.ReachFL < 600){
+                 errorTextContentForDownl += `FL ${CurrentConstraint.ReachFL} `;
+            } else{
+                 errorTextContentForDownl += `${CurrentConstraint.ReachFL} ft `;
+            };
+        }
+        if (CurrentConstraint.ReleasedForTurn !== false){
+             errorTextContentForDownl += `Released for turn `;
+        }
+        if (CurrentConstraint.ReleasedForDescent !== false){
+             errorTextContentForDownl += `Released for descent `;
+        }
+        if (CurrentConstraint.ReleasedForClimb !== false){
+             errorTextContentForDownl += `Released for climb `;
+        }
+        if (CurrentConstraint.ReleasedUntil !== 0){
+            if (CurrentConstraint.ReleasedUntil < 600){
+                 errorTextContentForDownl += `FL ${CurrentConstraint.ReleasedUntil} `;
+            } else{
+                 errorTextContentForDownl += `${CurrentConstraint.ReleasedUntil} ft `;
+            };
+        }
+        if (CurrentConstraint.ReleasedFromTen !== false){
+             errorTextContentForDownl += `Released 10 NM before COP `;
+        }
+        if (CurrentConstraint.ReleasedUc !== false){
+             errorTextContentForDownl += `Released `;
+        }
+        if (CurrentConstraint.SpecialConditionOne !== "nothing"){
+            if (CurrentConstraint.SpecialConditionOne === "atSummer"){
+                 errorTextContentForDownl += `at Summer: `;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "AMLIBA"){
+                 errorTextContentForDownl += `If via AMRAX - LITKU, BADOV: `;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "ARNeeded"){
+                 errorTextContentForDownl += `Approval request needed `;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "TRA"){
+                 errorTextContentForDownl += `If TRA06D active: `;
+            }
+            else if(CurrentConstraint.SpecialConditionOne === "EDARAN"){
+                 errorTextContentForDownl += `If via EDEMU, ARFOX, ANEXA `;
+            }
+            else{
+                 errorTextContentForDownl += `Lower even FL subject ACT/REV `;
+            }
+        }
+        if (CurrentConstraint.SpecialConditionTwo !== "nothing"){
+            if (CurrentConstraint.SpecialConditionTwo === "atFL"){
+                 errorTextContentForDownl += `At FL:  `;
+            }
+            else if(CurrentConstraint.SpecialConditionTwo === "aboveFl"){
+                 errorTextContentForDownl += `Above FL: `;
+            }
+            else{
+                 errorTextContentForDownl += `No constraint `;
+            }
+        }
+        if (CurrentConstraint.SpecialConditionFL !== 0){
+            if (CurrentConstraint.SpecialConditionFL < 600){
+                 errorTextContentForDownl += `FL ${CurrentConstraint.SpecialConditionFL} `;
+            } else{
+                 errorTextContentForDownl += `${CurrentConstraint.SpecialConditionFL} ft `;
+            };
+        }
+        if (CurrentConstraint.AutoREV !== false){
+             errorTextContentForDownl += `Subject to automatic REV `;
+        }
+        if (CurrentConstraint.EarlyToC !== false){
+             errorTextContentForDownl += `Early ToC needed `;
+        }
+        if (CurrentConstraint.TLHigher !== false){
+             errorTextContentForDownl += `if TL higher `;
+        }
+        if (CurrentConstraint.OddFL !== false){
+             errorTextContentForDownl += `Odd FL `;
+        }
+        if (CurrentConstraint.AtSummer !== false){
+             errorTextContentForDownl += `Summer FLAS `;
+        }
+    }
+
+
+    function showHint() {
+        hintText = "";
+        ErrorText();
+        hintText = errorTextContent;
+
+        
         document.getElementById('hintContainer').innerHTML = hintText;
 
         if (window.innerWidth <= 768) {
@@ -4627,16 +4760,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    /*function removeBulls(){
-        if (ErrorList.length > 0){
-            errorNumber -= 1;
-            ErrorList.pop();
-            showErrors();
-        }
-        else{
-            alert("Nincs hiba!")
-        }
-    }*/
 
     function nextConstraint() {
         const selectedCondAcIn = document.getElementById('indCondAcIn').value;
@@ -4744,21 +4867,19 @@ document.addEventListener("DOMContentLoaded", function() {
             errorNumber += 1;
             if(CurrentConstraint.DepartureOrArrival == "A"){
                 //Arrivals
+                ErrorTextFD();
                 ErrorList.push("From: " + CurrentConstraint.From + " To: " + 
                     CurrentConstraint.To + " " + CurrentConstraint.AirportCodes + 
                     " - " + "Arrival" + " Via: " + 
-                    CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + 
-                    " " + CurrentConstraint.MainFL)
+                    CurrentConstraint.Via + " " + errorTextContentForDownl)
             }
             else{
+                ErrorTextFD();
                 ErrorList.push("From: " + CurrentConstraint.From + " To: " + 
                     CurrentConstraint.To + " " + CurrentConstraint.AirportCodes + 
                     " - " + "Departure" + " Via: " + 
-                    CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + 
-                    " " + CurrentConstraint.MainFL)
+                    CurrentConstraint.Via + " " + errorTextContentForDownl)
             }
-            /*ErrorList.push(CurrentConstraint.AirportCodes + "-" + CurrentConstraint.DepartureOrArrival + " Via: " + 
-                CurrentConstraint.Via + " " + CurrentConstraint.ConditionACIn + " " + CurrentConstraint.MainFL)*/
             showErrors();
             //ide kell
         }
